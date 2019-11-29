@@ -2,7 +2,9 @@
   "name": "@kfn-modern-dx/kfng",
   "version": "0.0.2",
   "license": "MIT",
-
+  "homepage": "https://github.com/kfn-riaux/ngDx",
+  "bugs": "https://github.com/kfn-riaux/ngDx/issues",
+  "author": "KadoTomohiro",
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
