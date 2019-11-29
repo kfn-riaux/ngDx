@@ -1,24 +1,24 @@
 # Kfng
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.14.
+Angular parts library.
 
-## Code scaffolding
+## Directive
 
-Run `ng generate component component-name --project kfng` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project kfng`.
-> Note: Don't forget to add `--project kfng` or else it will be added to the default project in your `angular.json` file. 
+#### FixWhenScrolling
 
-## Build
+Directive to fix the element at the top of the page when scrolling
 
-Run `ng build kfng` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### selector
 
-## Publishing
+`[kfngFixWhenScrolling]`
 
-After building your library with `ng build kfng`, go to the dist folder `cd dist/kfng` and run `npm publish`.
+##### usage
 
-## Running unit tests
-
-Run `ng test kfng` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```html
+<div kfngFixWhenScrolling>
+  header
+</div>
+<div>
+  contents
+</div>
+```
