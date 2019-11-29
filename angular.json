@@ -120,6 +120,41 @@
           }
         }
       }
+    },
+    "kfng": {
+      "projectType": "library",
+      "root": "projects/kfng",
+      "sourceRoot": "projects/kfng/src",
+      "prefix": "kfng",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/kfng/tsconfig.lib.json",
+            "project": "projects/kfng/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kfng/src/test.ts",
+            "tsConfig": "projects/kfng/tsconfig.spec.json",
+            "karmaConfig": "projects/kfng/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kfng/tsconfig.lib.json",
+              "projects/kfng/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ngDx"
 }
